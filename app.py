@@ -55,7 +55,7 @@ def close_connection(connection):
 def get_users():
     connection = create_connection()
     if not connection:
-        return jsonify({"error": "Database connection failed"}), 500
+        return jsonify({"error": "Database connection failed check it"}), 500
 
     query = "SELECT * FROM users;"
     cursor = connection.cursor()
